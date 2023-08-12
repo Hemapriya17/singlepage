@@ -22,14 +22,14 @@ const Footer = () => {
                   style={{ background: "transparent" }} 
                 />
                 </Link>
-                <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
+                <p className="mb-9 text-base font-medium leading-relaxed dark:text-white text-body-color">
                 Our innovative all-in-one solution revolutionizes the way industries approach experimentation and product development.
                 </p>
                 <div className="flex items-center">
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 hover:text-primary text-body-color"
+                    className="mr-6 hover:text-primary dark:text-white text-body-color"
                   >
                     <svg
                       width="9"
@@ -43,7 +43,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 hover:text-primary text-body-color"
+                    className="mr-6 hover:text-primary dark:text-white text-body-color"
                   >
                     <svg
                       width="19"
@@ -57,7 +57,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 hover:text-primary text-body-color"
+                    className="mr-6 hover:text-primary dark:text-white text-body-color"
                   >
                     <svg
                       width="18"
@@ -71,7 +71,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 hover:text-primary text-body-color"
+                    className="mr-6 hover:text-primary dark:text-white text-body-color"
                   >
                     <svg
                       width="17"
@@ -95,7 +95,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/blog"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-base font-medium dark:text-white text-body-color hover:text-primary"
                     >
                       Blog
                     </a>
@@ -103,7 +103,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/platforms"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-base font-medium dark:text-white text-body-color hover:text-primary"
                     >
                       Platforms
                     </a>
@@ -111,7 +111,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/industries"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-base font-medium dark:text-white text-body-color hover:text-primary"
                     >
                       Industries
                     </a>
@@ -129,7 +129,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-base font-medium dark:text-white text-body-color hover:text-primary"
                     >
                       {" "}
                       TOS{" "}
@@ -138,7 +138,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-base font-medium dark:text-white text-body-color hover:text-primary"
                     >
                       {" "}
                       Privacy Policy{" "}
@@ -147,7 +147,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-base font-medium dark:text-white text-body-color hover:text-primary"
                     >
                       {" "}
                       Refund Policy{" "}
@@ -166,7 +166,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-base font-medium dark:text-white text-body-color hover:text-primary"
                     >
                       {" "}
                       Open Support Ticket{" "}
@@ -175,7 +175,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-base font-medium dark:text-white text-body-color hover:text-primary"
                     >
                       {" "}
                       Terms of Use{" "}
@@ -184,7 +184,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/contact"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-base font-medium dark:text-white text-body-color hover:text-primary"
                     >
                      Contact
                     </a>

@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 const Footer = () => {
+  const { theme } = useTheme();
+
   return (
     <>
       <footer
@@ -13,14 +16,23 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
-                <Image
-                  src="/images/logo/Logo.png"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                  style={{ background: "transparent" }} 
-                />
+                {theme === "light" ? (
+                  <Image
+                    src="/images/logo/Logo.png"
+                    alt="logo"
+                    width={140}
+                    height={30}
+                    className="w-full"
+                  />
+                ) : (
+                  <Image
+                    src="/images/logo/WhiteLogo.png"
+                    alt="logo"
+                    width={140}
+                    height={30}
+                    className="w-full"
+                  />
+                )}
                 </Link>
                 <p className="mb-9 text-base font-medium leading-relaxed dark:text-white text-body-color">
                 Our innovative all-in-one solution revolutionizes the way industries approach experimentation and product development.

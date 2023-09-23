@@ -6,7 +6,14 @@ import SectionTitle from "../Common/SectionTitle";
 const Industries = () => {
   return (
     <div>
-         <section className="pt-[40px] pb-[40px]">
+      <div className="container">
+        <SectionTitle
+          title="Industries"
+          paragraph=""
+          center
+        />
+      </div>
+      <section className="pt-[40px] pb-[40px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
@@ -23,7 +30,6 @@ const Industries = () => {
                 />
               </div>
             </div>
-
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Personal care appliances"
@@ -34,7 +40,7 @@ const Industries = () => {
           </div>
         </div>
         <div className="container">
-          <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+          {/* <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28"> */}
             <div className="-mx-4 flex flex-wrap items-center">
               <div className="w-full px-4 lg:w-1/2">
                 <SectionTitle
@@ -60,7 +66,7 @@ const Industries = () => {
                 </div>
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </div>
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
@@ -89,7 +95,7 @@ const Industries = () => {
           </div>
         </div>
         <div className="container">
-          <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+          {/* <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28"> */}
             <div className="-mx-4 flex flex-wrap items-center">
               <div className="w-full px-4 lg:w-1/2">
                 <SectionTitle
@@ -115,11 +121,11 @@ const Industries = () => {
                 </div>
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Industries
+export default Industries;

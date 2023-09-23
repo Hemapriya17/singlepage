@@ -4,8 +4,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { useTheme } from "next-themes";
 
 const Header = () => {
+  const { theme } = useTheme();
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -53,13 +55,23 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-0"
                 } `}
               >
-                <Image
-                  src="/images/logo/Logo.png"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
+                {theme === "light" ? (
+                  <Image
+                    src="/images/logo/Logo.png"
+                    alt="logo"
+                    width={140}
+                    height={30}
+                    className="w-full"
+                  />
+                ) : (
+                  <Image
+                    src="/images/logo/WhiteLogo.png"
+                    alt="logo"
+                    width={140}
+                    height={30}
+                    className="w-full"
+                  />
+                )}
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
@@ -94,7 +106,7 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-12">
+                  {/* <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
                       <li key={menuItem.id} className="group relative">
                         {menuItem.path ? (
@@ -139,7 +151,7 @@ const Header = () => {
                         )}
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">

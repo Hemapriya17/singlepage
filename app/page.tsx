@@ -1,6 +1,8 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import ScrollUp from "@/components/Common/ScrollUp";
+import Contact from "@/components/Contact";
+import Industries from "@/components/Industries";
 import Landing from "@/components/Landing";
 import Platforms from "@/components/Platforms";
 import Pricing from "@/components/Pricing";
@@ -15,12 +17,14 @@ export default function Home() {
     <>
       <ScrollUp />
       <Landing />
-      {/* <Platforms/> */}
+      <Platforms/>
       <Video />
       <AboutSectionOne />
       <AboutSectionTwo />
+      <Industries/>
       <Testimonials />
       <Pricing />
+      <Contact/>
     </>
   );
 }

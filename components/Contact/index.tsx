@@ -5,7 +5,7 @@ const Contact = () => {
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
+          <div className="w-full px-10">
             <div
               className="wow fadeInUp mb-12 rounded-md bg-primary/[3%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
@@ -61,7 +61,7 @@ const Contact = () => {
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
-                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp dark:text-white"
                       ></textarea>
                     </div>
                   </div>
@@ -74,9 +74,9 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
+          {/* <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
             <NewsLatterBox />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
